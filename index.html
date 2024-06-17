@@ -42,7 +42,7 @@
                 <p>View my <a href="https://drive.google.com/file/d/1OY17ScxfKY_pv_Od-UxqMy_HkH84NW-Q/view?usp=drive_link" target="_blank">resume</a>.</p>
             </div>
         </section>
-
+        <hr class="divider"> <!-- Divider between sections -->
         <section id="portfolio">
             <h2 class="header">Portfolio</h2>
             <div class="project">
@@ -50,7 +50,7 @@
                 <p>Description of the project goes here.</p>
             </div>
         </section>
-
+        <hr class="divider"> <!-- Divider between sections -->
         <section id="contact">
             <h2 class="header">Contact Me</h2>
             <p>You can contact me at:</p>
@@ -58,6 +58,22 @@
                 <li>Mobile: 0791636501 <a href="tel:0791636501"><button class="btn">Call Now</button></a></li>
                 <li>Email: njinonjuguna@gmail.com <a href="mailto:njinonjuguna@gmail.com"><button class="btn">Email Me</button></a></li>    
             </ul>
+            <h3 class="header">Send me a message</h3>
+            <form class="contact-form">
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
         </section>
     </main>
 
