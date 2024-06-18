@@ -4,89 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ernest Njino - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Position the image in the top right corner */
         .passport-photo {
             position: absolute;
-            top: 5px; /* Adjust the top position as needed */
-            right: 48px; /* Adjust the right position as needed */
-            max-width: 1.5in; /* Passport photo width */
-            max-height: 1.5in; /* Passport photo height */
+            top: 1.25rem;
+            right: 3rem;
+            width: 1.5in;
+            height: 1.5in;
+            border-radius: 50%;
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1 class="header">My name is Ernest Njino</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow p-4 mb-6">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Ernest Njino</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="text-blue-500 hover:text-blue-700">Home</a></li>
+                <li><a href="#about" class="text-blue-500 hover:text-blue-700">About</a></li>
+                <li><a href="#skills" class="text-blue-500 hover:text-blue-700">Skills</a></li>
+                <li><a href="#portfolio" class="text-blue-500 hover:text-blue-700">Portfolio</a></li>
+                <li><a href="#contact" class="text-blue-500 hover:text-blue-700">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="about">
-            <h2 class="header">About Me</h2>
-            <div class="container">
+    <main class="container mx-auto px-4">
+        <!-- Hero Section -->
+        <section id="home" class="text-center py-20 bg-blue-500 text-white">
+            <h1 class="text-5xl font-bold">Ernest Njino</h1>
+            <h2 class="text-3xl mt-4">Full-Stack Developer</h2>
+            <p class="mt-4">Building interactive and robust web applications</p>
+            <a href="#portfolio" class="mt-8 inline-block bg-white text-blue-500 px-6 py-3 rounded hover:bg-gray-200">View My Work</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16">
+            <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+            <div class="bg-white p-6 rounded-lg shadow-lg relative">
                 <img src="static/js/Image.jpg" alt="Ernest Njuguna" class="passport-photo">
-                <h3 class="header">My name is Ernest Njuguna</h3>
-                <p>Full Stack Product Developer at FarmWorks Farming Services Limited, a prominent player in the agribusiness sector. Holding a Bachelor's degree in Business and Information Technology from Dedan Kimathi University of Technology, I've cultivated a robust skill set in data analysis, software development, and network administration.</p>
-                <p>I apply data capture techniques, SQL, Microsoft tools such as MS Excel, and various other tools to collect, process, and interpret extensive agricultural data in my current role. This enables me to offer actionable insights and recommendations to improve crop yield, quality, and profitability. Collaborating closely with cross-functional teams and stakeholders, I contribute to designing, implementing, and evaluating data-driven solutions that resonate with the company's vision and objectives.</p>
-                <p>Passionate about leveraging technology to tackle business challenges, I remain dedicated to continuous learning, ensuring I stay abreast of emerging skills and industry trends to deliver cutting-edge solutions.</p>
-                <p>Please view my resume below.</p>
-                <p>View my <a href="https://drive.google.com/file/d/1OY17ScxfKY_pv_Od-UxqMy_HkH84NW-Q/view?usp=drive_link" target="_blank">resume</a>.</p>
+                <h3 class="text-2xl font-semibold mb-2">My name is Ernest Njuguna</h3>
+                <p class="mb-4">Full Stack Product Developer at FarmWorks Farming Services Limited, a prominent player in the agribusiness sector. Holding a Bachelor's degree in Business and Information Technology from Dedan Kimathi University of Technology, I've cultivated a robust skill set in data analysis, software development, and network administration.</p>
+                <p class="mb-4">I apply data capture techniques, SQL, Microsoft tools such as MS Excel, and various other tools to collect, process, and interpret extensive agricultural data in my current role. This enables me to offer actionable insights and recommendations to improve crop yield, quality, and profitability. Collaborating closely with cross-functional teams and stakeholders, I contribute to designing, implementing, and evaluating data-driven solutions that resonate with the company's vision and objectives.</p>
+                <p class="mb-4">Passionate about leveraging technology to tackle business challenges, I remain dedicated to continuous learning, ensuring I stay abreast of emerging skills and industry trends to deliver cutting-edge solutions.</p>
+                <p class="mb-4">Please view my resume below.</p>
+                <p>View my <a href="https://drive.google.com/file/d/1OY17ScxfKY_pv_Od-UxqMy_HkH84NW-Q/view?usp=drive_link" target="_blank" class="text-blue-500 hover:text-blue-700">resume</a>.</p>
             </div>
         </section>
-        <hr class="divider"> <!-- Divider between sections -->
-        <section id="portfolio">
-            <h2 class="header">Portfolio</h2>
-            <div class="project">
-                <h3 class="header">Project Title</h3>
-                <p>Description of the project goes here.</p>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 bg-gray-100">
+            <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
+                <div class="skill">
+                    <i class="fab fa-html5 fa-3x text-orange-600"></i>
+                    <p class="mt-2">HTML</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt fa-3x text-blue-600"></i>
+                    <p class="mt-2">CSS</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js fa-3x text-yellow-500"></i>
+                    <p class="mt-2">JavaScript</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-react fa-3x text-blue-400"></i>
+                    <p class="mt-2">React</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-node-js fa-3x text-green-600"></i>
+                    <p class="mt-2">Node.js</p>
+                </div>
+                <!-- Add more skills as needed -->
             </div>
         </section>
-        <hr class="divider"> <!-- Divider between sections -->
-        <section id="contact">
-            <h2 class="header">Contact Me</h2>
-            <p>You can contact me at:</p>
-            <ul>
-                <li>Mobile: 0791636501 <a href="tel:0791636501"><button class="btn">Call Now</button></a></li>
-                <li>Email: njinonjuguna@gmail.com <a href="mailto:njinonjuguna@gmail.com"><button class="btn">Email Me</button></a></li>    
+
+        <!-- Projects Section -->
+        <section id="portfolio" class="py-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Portfolio</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Farmer Management Software</h3>
+                    <p class="mb-4">Developed a comprehensive software to manage farmer details, including registration, input distribution, and produce collection.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Inventory App</h3>
+                    <p class="mb-4">Created an inventory application to track and manage company assets and supplies efficiently.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
+                    <p class="mb-4">Built a task management app to facilitate better project management and task allocation within the team.</p>
+                </div>
+                <!-- Add more projects here -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gray-100">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+            <p class="text-center mb-4">You can contact me at:</p>
+            <ul class="text-center mb-8">
+                <li class="mb-2">Mobile: 0791636501 <a href="tel:0791636501" class="text-blue-500 hover:text-blue-700">Call Now</a></li>
+                <li>Email: njinonjuguna@gmail.com <a href="mailto:njinonjuguna@gmail.com" class="text-blue-500 hover:text-blue-700">Email Me</a></li>
             </ul>
-            <h3 class="header">Send me a message</h3>
-            <form class="contact-form">
-                <div class="form-row">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+            <h3 class="text-xl font-semibold text-center mb-4">Send me a message</h3>
+            <form class="space-y-4 max-w-lg mx-auto">
+                <div class="flex flex-col">
+                    <label for="name" class="mb-2">Name:</label>
+                    <input type="text" id="name" name="name" required class="p-2 border border-gray-300 rounded">
                 </div>
-                <div class="form-row">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="flex flex-col">
+                    <label for="email" class="mb-2">Email:</label>
+                    <input type="email" id="email" name="email" required class="p-2 border border-gray-300 rounded">
                 </div>
-                <div class="form-row">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
+                <div class="flex flex-col">
+                    <label for="message" class="mb-2">Message:</label>
+                    <textarea id="message" name="message" required class="p-2 border border-gray-300 rounded"></textarea>
                 </div>
-                <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">Submit</button>
             </form>
         </section>
     </main>
 
-    <footer>
+    <footer class="bg-white shadow p-4 mt-6 text-center">
         <p>&copy; 2024 Ernest Njino. All rights reserved.</p>
-        <a href="https://github.com/NjinoNjuguna" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github fa-2x blue-icon"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/ernest-njuguna-925982177" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin fa-2x blue-icon"></i>
-        </a>
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="https://github.com/NjinoNjuguna" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github fa-2x text-blue-500 hover:text-blue-700"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ernest-njuguna-925982177" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin fa-2x text-blue-500 hover:text-blue-700"></i>
+            </a>
+        </div>
     </footer>
-    
+
     <script src="scripts.js"></script>
 </body>
 </html>

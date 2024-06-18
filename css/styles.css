@@ -8,6 +8,7 @@ body {
   color: #333; /* Darker text color for contrast */
   max-width: 1300px;
   margin: 10px auto;
+  padding: 0 20px; /* Add padding to the sides */
 }
 
 .header {
