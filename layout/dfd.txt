@@ -1,0 +1,40 @@
++------------------------------------------------+
+|                  HEADER                        |
+| Logo  | Home | About | Projects | Skills | Blog | Contact |
++------------------------------------------------+
+|                                                |
+|                HERO SECTION                     |
+|         [Your Name - Full-Stack Developer]      |
+|   "Building interactive and robust web apps"    |
+|                [View My Work]                   |
+|                                                |
++------------------------------------------------+
+|                  ABOUT SECTION                  |
+| [Profile Picture]  [Bio and Key Achievements]   |
+|                                                |
++------------------------------------------------+
+|                  SKILLS SECTION                 |
+| [HTML] [CSS] [JavaScript] [React] [Node.js]     |
+| [Skill Bars or Charts]                          |
+|                                                |
++------------------------------------------------+
+|                 PROJECTS SECTION                |
+| [Project 1 Thumbnail] [Project 2 Thumbnail]     |
+| [Project 3 Thumbnail] [Project 4 Thumbnail]     |
+| [Filter Options]                                |
+|                                                |
++------------------------------------------------+
+|                  BLOG SECTION                   |
+| [Blog Post 1] [Blog Post 2] [Blog Post 3]       |
+|                                                |
++------------------------------------------------+
+|                 CONTACT SECTION                 |
+| [Contact Form] [Social Media Links]             |
+| [Email Address] [Phone Number]                  |
+|                                                |
++------------------------------------------------+
+|                    FOOTER                       |
+| [© 2024 Your Name] [Privacy Policy] [ToS]       |
+| [Back to Top]                                   |
+|                                                |
++------------------------------------------------+
