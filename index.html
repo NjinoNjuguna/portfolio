@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    
         .passport-photo {
             position: absolute;
             top: 1.25rem;
@@ -16,7 +20,7 @@
             height: 1.5in;
             border-radius: 50%;
         }
-    </style>
+    </style>    
 </head>
 <body class="bg-gray-900 text-gray-300">
     <header class="bg-gray-800 shadow p-4 mb-6">
@@ -31,12 +35,13 @@
             </ul>
         </nav>
     </header>
+    
 
     <main class="container mx-auto px-4">
         <!-- Hero Section -->
         <section id="home" class="text-center py-20 bg-gray-800 text-gray-100">
             <div class="flex flex-col items-center justify-center">
-                <img src="static/js/IMG_0804.jpg" alt="Ernest Njino" class="w-48 h-48 rounded-full mb-6">
+                <img src="images/IMG_0804.jpg" alt="Ernest Njino" class="w-48 h-48 rounded-full mb-6">
                 <h1 class="text-5xl font-bold">Ernest Njino</h1>
                 <h2 class="text-3xl mt-4">Full-Stack Developer</h2>
                 <p class="mt-4">Building interactive and robust web applications</p>
@@ -48,13 +53,12 @@
         <section id="about" class="py-16 bg-gray-900">
             <h2 class="text-3xl font-bold text-center mb-8 text-gray-100">About Me</h2>
             <div class="bg-gray-800 p-6 rounded-lg shadow-lg relative">
-                <img src="static/js/Image.jpg" alt="Ernest Njuguna" class="passport-photo">
                 <h3 class="text-2xl font-semibold mb-2 text-gray-100">My name is Ernest Njuguna</h3>
                 <p class="mb-4">Full Stack Product Developer at FarmWorks Farming Services Limited, a prominent player in the agribusiness sector. Holding a Bachelor's degree in Business and Information Technology from Dedan Kimathi University of Technology, I've cultivated a robust skill set in data analysis, software development, and network administration.</p>
                 <p class="mb-4">I apply data capture techniques, SQL, Microsoft tools such as MS Excel, and various other tools to collect, process, and interpret extensive agricultural data in my current role. This enables me to offer actionable insights and recommendations to improve crop yield, quality, and profitability. Collaborating closely with cross-functional teams and stakeholders, I contribute to designing, implementing, and evaluating data-driven solutions that resonate with the company's vision and objectives.</p>
                 <p class="mb-4">Passionate about leveraging technology to tackle business challenges, I remain dedicated to continuous learning, ensuring I stay abreast of emerging skills and industry trends to deliver cutting-edge solutions.</p>
                 <p class="mb-4">Please view my resume below.</p>
-                <p>View my <a href="https://drive.google.com/file/d/1OY17ScxfKY_pv_Od-UxqMy_HkH84NW-Q/view?usp=drive_link" target="_blank" class="text-blue-400 hover:text-blue-300">resume</a>.</p>
+                <p>View my <a href="https://drive.google.com/file/d/1hT6jeI1fEzheQr6jAYpOUPoiECmP0fJ5/view?usp=drive_link" target="_blank" class="text-blue-400 hover:text-blue-300">resume</a>.</p>
             </div>
         </section>
 
@@ -115,7 +119,7 @@
                 <li>Email: njinonjuguna@gmail.com <a href="mailto:njinonjuguna@gmail.com" class="text-blue-400 hover:text-blue-300">Email Me</a></li>
             </ul>
             <h3 class="text-xl font-semibold text-center mb-4 text-gray-100">Send me a message</h3>
-            <form class="space-y-4 max-w-lg mx-auto">
+            <form class="contact-form space-y-4 max-w-lg mx-auto" method="POST" action="/submit-form">
                 <div class="flex flex-col">
                     <label for="name" class="mb-2">Name:</label>
                     <input type="text" id="name" name="name" required class="p-2 border border-gray-600 rounded bg-gray-700 text-gray-300">
@@ -130,6 +134,8 @@
                 </div>
                 <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">Submit</button>
             </form>
+            
+            
         </section>
     </main>
 
@@ -141,6 +147,15 @@
             </a>
             <a href="https://www.linkedin.com/in/ernest-njuguna-925982177" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition duration-300">
                 <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://x.com/NjinoNjuguna" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition duration-300">
+                <i class="fab fa-x fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/anesto.jincho" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition duration-300">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCHaINrsUcdh2ThGRdSDHNbA" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition duration-300">
+                <i class="fab fa-youtube fa-2x"></i>
             </a>
         </div>
     </footer>
