@@ -11,22 +11,30 @@
         html {
             scroll-behavior: smooth;
         }
-    
+
         .passport-photo {
             position: absolute;
             top: 1.25rem;
-            right: 3rem;
-            width: 1.5in;
-            height: 1.5in;
+            right: 1rem;
+            width: 3.5rem;
+            height: 3.5rem;
             border-radius: 50%;
         }
-    </style>    
+
+        @media (min-width: 640px) {
+            .passport-photo {
+                right: 3rem;
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-900 text-gray-300">
     <header class="bg-gray-800 shadow p-4 mb-6">
-        <nav class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-gray-100">Ernest Njino</h1>
-            <ul class="flex space-x-4">
+        <nav class="container mx-auto flex justify-between items-center flex-wrap">
+            <h1 class="text-2xl sm:text-3xl font-bold text-gray-100">Ernest Njino</h1>
+            <ul class="flex flex-wrap space-x-4 mt-4 sm:mt-0">
                 <li><a href="#home" class="text-gray-300 hover:text-gray-100">Home</a></li>
                 <li><a href="#about" class="text-gray-300 hover:text-gray-100">About</a></li>
                 <li><a href="#skills" class="text-gray-300 hover:text-gray-100">Skills</a></li>
@@ -35,16 +43,15 @@
             </ul>
         </nav>
     </header>
-    
 
     <main class="container mx-auto px-4">
         <!-- Hero Section -->
         <section id="home" class="text-center py-20 bg-gray-800 text-gray-100">
             <div class="flex flex-col items-center justify-center">
-                <img src="images/IMG_0804.jpg" alt="Ernest Njino" class="w-48 h-48 rounded-full mb-6">
-                <h1 class="text-5xl font-bold">Ernest Njino</h1>
-                <h2 class="text-3xl mt-4">Full-Stack Developer</h2>
-                <p class="mt-4">Building interactive and robust web applications</p>
+                <img src="images/IMG_0804.jpg" alt="Ernest Njino" class="passport-photo mb-6">
+                <h1 class="text-3xl sm:text-5xl font-bold">Ernest Njino</h1>
+                <h2 class="text-xl sm:text-3xl mt-4">Full-Stack Developer</h2>
+                <p class="mt-4 text-sm sm:text-base">Building interactive and robust web applications</p>
                 <a href="#portfolio" class="mt-8 inline-block bg-gray-700 text-gray-100 px-6 py-3 rounded hover:bg-gray-600">View My Work</a>
             </div>
         </section>
@@ -65,25 +72,25 @@
         <!-- Skills Section -->
         <section id="skills" class="py-16 bg-gray-800">
             <h2 class="text-3xl font-bold text-center mb-8 text-gray-100">Skills</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-center">
                 <div class="skill hover:text-white transition duration-300">
-                    <i class="fab fa-html5 fa-3x text-orange-600"></i>
+                    <i class="fab fa-html5 fa-2x sm:fa-3x text-orange-600"></i>
                     <p class="mt-2">HTML</p>
                 </div>
                 <div class="skill hover:text-white transition duration-300">
-                    <i class="fab fa-css3-alt fa-3x text-blue-600"></i>
+                    <i class="fab fa-css3-alt fa-2x sm:fa-3x text-blue-600"></i>
                     <p class="mt-2">CSS</p>
                 </div>
                 <div class="skill hover:text-white transition duration-300">
-                    <i class="fab fa-js fa-3x text-yellow-500"></i>
+                    <i class="fab fa-js fa-2x sm:fa-3x text-yellow-500"></i>
                     <p class="mt-2">JavaScript</p>
                 </div>
                 <div class="skill hover:text-white transition duration-300">
-                    <i class="fab fa-react fa-3x text-blue-400"></i>
+                    <i class="fab fa-react fa-2x sm:fa-3x text-blue-400"></i>
                     <p class="mt-2">React</p>
                 </div>
                 <div class="skill hover:text-white transition duration-300">
-                    <i class="fab fa-node-js fa-3x text-green-600"></i>
+                    <i class="fab fa-node-js fa-2x sm:fa-3x text-green-600"></i>
                     <p class="mt-2">Node.js</p>
                 </div>
                 <!-- Add more skills as needed -->
@@ -134,8 +141,6 @@
                 </div>
                 <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">Submit</button>
             </form>
-            
-            
         </section>
     </main>
 
