@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,154 +14,212 @@
         }
     </style>
 </head>
-<body class="bg-gray-900 text-gray-300">
-    <header class="bg-gray-800 shadow p-4 mb-6">
-        <nav class="container mx-auto flex justify-between items-center flex-wrap">
-            <img src="static/js/N.png" alt="Logo" class="h-10 sm:h-14">
-            <ul class="flex flex-wrap space-x-4 mt-4 sm:mt-0">
-                <li><a href="#home" class="text-gray-300 hover:text-gray-100">Home</a></li>
-                <li><a href="#about" class="text-gray-300 hover:text-gray-100">About</a></li>
-                <li><a href="#skills" class="text-gray-300 hover:text-gray-100">Skills</a></li>
-                <li><a href="#portfolio" class="text-gray-300 hover:text-gray-100">Portfolio</a></li>
-                <li><a href="#contact" class="text-gray-300 hover:text-gray-100">Contact</a></li>
-            </ul>
-        </nav>
+
+<body class="bg-gray-900 text-gray-300 font-sans">
+
+    <!-- Header -->
+    <header class="bg-gray-800 shadow-md">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <img src="static/js/N.png" alt="Logo" class="h-10 sm:h-12">
+            <nav>
+                <ul class="flex space-x-4 text-sm sm:text-base">
+                    <li><a href="#home" class="text-gray-300 hover:text-gray-100">Home</a></li>
+                    <li><a href="#about" class="text-gray-300 hover:text-gray-100">About</a></li>
+                    <li><a href="#skills" class="text-gray-300 hover:text-gray-100">Skills</a></li>
+                    <li><a href="#portfolio" class="text-gray-300 hover:text-gray-100">Portfolio</a></li>
+                    <li><a href="#contact" class="text-gray-300 hover:text-gray-100">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="container mx-auto px-4">
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+
         <!-- Hero Section -->
         <section id="home" class="text-center py-20 bg-gray-800 text-gray-100">
-            <div class="flex flex-col items-center justify-center">
-                <img src="static/js/IMG_0804.jpg" alt="Ernest Njino" class="rounded-full w-32 h-32 mb-6">
-                <h1 class="text-3xl sm:text-5xl font-bold">Ernest Njino</h1>
-                <h2 class="text-xl sm:text-3xl mt-4">Full-Stack Developer</h2>
-                <p class="mt-4 text-sm sm:text-base">Building interactive and robust web applications</p>
-                <a href="#portfolio" class="mt-8 inline-block bg-gray-700 text-gray-100 px-6 py-3 rounded hover:bg-gray-600">View My Work</a>
+            <div class="max-w-3xl mx-auto">
+                <img src="static/js/IMG_0804.jpg" alt="Ernest Njino" class="rounded-full w-32 h-32 mx-auto mb-6">
+                <h1 class="text-4xl sm:text-5xl font-bold mb-4">Ernest Njino</h1>
+                <h2 class="text-xl sm:text-2xl mb-4">Full-Stack Developer</h2>
+                <p class="text-lg sm:text-base mb-6">Building interactive and robust web applications</p>
+                <a href="#portfolio"
+                    class="inline-block bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300">View
+                    My Work</a>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="py-16 bg-gray-900">
-            <h2 class="text-3xl font-bold text-center mb-8 text-gray-100">About Me</h2>
-            <div class="bg-gray-800 p-6 rounded-lg shadow-lg relative">
-                <h3 class="text-2xl font-semibold mb-2 text-gray-100">My name is Ernest Njuguna</h3>
-                <p class="mb-4">Full Stack Product Developer at FarmWorks Farming Services Limited, a prominent player in the agribusiness sector. Holding a Bachelor's degree in Business and Information Technology from Dedan Kimathi University of Technology, I've cultivated a robust skill set in data analysis, software development, and network administration.</p>
-                <p class="mb-4">I apply data capture techniques, SQL, Microsoft tools such as MS Excel, and various other tools to collect, process, and interpret extensive agricultural data in my current role. This enables me to offer actionable insights and recommendations to improve crop yield, quality, and profitability. Collaborating closely with cross-functional teams and stakeholders, I contribute to designing, implementing, and evaluating data-driven solutions that resonate with the company's vision and objectives.</p>
-                <p class="mb-4">Passionate about leveraging technology to tackle business challenges, I remain dedicated to continuous learning, ensuring I stay abreast of emerging skills and industry trends to deliver cutting-edge solutions.</p>
-                <p class="mb-4">Please view my resume below.</p>
-                <p>View my <a href="https://drive.google.com/file/d/1hT6jeI1fEzheQr6jAYpOUPoiECmP0fJ5/view?usp=drive_link" target="_blank" class="text-blue-400 hover:text-blue-300">resume</a>.</p>
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-100">About Me</h2>
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg text-gray-100">
+                    <h3 class="text-2xl sm:text-3xl font-semibold mb-4">My name is Ernest Njuguna</h3>
+                    <p class="mb-6 leading-relaxed">Full Stack Product Developer at FarmWorks Farming Services
+                        Limited, a prominent player in the agribusiness sector. Holding a Bachelor's degree in
+                        Business and Information Technology from Dedan Kimathi University of Technology, I've
+                        cultivated a robust skill set in data analysis, software development, and network
+                        administration.</p>
+                    <p class="mb-6 leading-relaxed">I apply data capture techniques, SQL, Microsoft tools such as MS
+                        Excel, and various other tools to collect, process, and interpret extensive agricultural
+                        data in my current role. This enables me to offer actionable insights and recommendations
+                        to improve crop yield, quality, and profitability. Collaborating closely with
+                        cross-functional teams and stakeholders, I contribute to designing, implementing, and
+                        evaluating data-driven solutions that resonate with the company's vision and objectives.
+                    </p>
+                    <p class="mb-6 leading-relaxed">Passionate about leveraging technology to tackle business challenges,
+                        I remain dedicated to continuous learning, ensuring I stay abreast of emerging skills and
+                        industry trends to deliver cutting-edge solutions.</p>
+                    <p class="mb-4 leading-relaxed">Please view my resume below.</p>
+                    <p><a href="https://drive.google.com/file/d/1hT6jeI1fEzheQr6jAYpOUPoiECmP0fJ5/view?usp=drive_link"
+                            target="_blank"
+                            class="text-blue-400 hover:text-blue-300">View my resume</a>.</p>
+                </div>
             </div>
         </section>
 
         <!-- Skills Section -->
         <section id="skills" class="py-16 bg-gray-800">
-            <h2 class="text-3xl font-bold text-center mb-8 text-gray-100">Skills</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-center">
-                <div class="skill hover:text-white transition duration-300">
-                    <i class="fab fa-html5 fa-2x sm:fa-3x text-orange-600"></i>
-                    <p class="mt-2">HTML</p>
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-100">Skills</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 text-center">
+                    <div class="hover:text-white transition duration-300">
+                        <i class="fab fa-html5 text-orange-600 text-4xl sm:text-5xl"></i>
+                        <p class="text-lg sm:text-base mt-2">HTML</p>
+                    </div>
+                    <div class="hover:text-white transition duration-300">
+                        <i class="fab fa-css3-alt text-blue-600 text-4xl sm:text-5xl"></i>
+                        <p class="text-lg sm:text-base mt-2">CSS</p>
+                    </div>
+                    <div class="hover:text-white transition duration-300">
+                        <i class="fab fa-js text-yellow-500 text-4xl sm:text-5xl"></i>
+                        <p class="text-lg sm:text-base mt-2">JavaScript</p>
+                    </div>
+                    <div class="hover:text-white transition duration-300">
+                        <i class="fab fa-react text-blue-400 text-4xl sm:text-5xl"></i>
+                        <p class="text-lg sm:text-base mt-2">React</p>
+                    </div>
+                    <div class="hover:text-white transition duration-300">
+                        <i class="fab fa-node-js text-green-600 text-4xl sm:text-5xl"></i>
+                        <p class="text-lg sm:text-base mt-2">Node.js</p>
+                    </div>
+                    <div class="hover:text-white transition duration-300">
+                        <i class="fas fa-database text-blue-400 text-4xl sm:text-5xl"></i>
+                        <p class="text-lg sm:text-base mt-2">PostgreSQL</p>
+                    </div>
+                    <div class="hover:text-white transition duration-300">
+                        <i class="fab fa-python text-yellow-400 text-4xl sm:text-5xl"></i>
+                        <p class="text-lg sm:text-base mt-2">Python</p>
+                    </div>
+                    <!-- Add more skills as needed -->
                 </div>
-                <div class="skill hover:text-white transition duration-300">
-                    <i class="fab fa-css3-alt fa-2x sm:fa-3x text-blue-600"></i>
-                    <p class="mt-2">CSS</p>
-                </div>
-                <div class="skill hover:text-white transition duration-300">
-                    <i class="fab fa-js fa-2x sm:fa-3x text-yellow-500"></i>
-                    <p class="mt-2">JavaScript</p>
-                </div>
-                <div class="skill hover:text-white transition duration-300">
-                    <i class="fab fa-react fa-2x sm:fa-3x text-blue-400"></i>
-                    <p class="mt-2">React</p>
-                </div>
-                <div class="skill hover:text-white transition duration-300">
-                    <i class="fab fa-node-js fa-2x sm:fa-3x text-green-600"></i>
-                    <p class="mt-2">Node.js</p>
-                </div>
-                <div class="skill hover:text-white transition duration-300">
-                    <i class="fas fa-database fa-2x sm:fa-3x text-blue-400"></i>
-                    <p class="mt-2">PostgreSQL</p>
-                </div>
-                <div class="skill hover:text-white transition duration-300">
-                    <i class="fab fa-python fa-2x sm:fa-3x text-yellow-400"></i>
-                    <p class="mt-2">Python</p>
-                </div>
-                <!-- Add more skills as needed -->
             </div>
         </section>
 
         <!-- Projects Section -->
         <section id="portfolio" class="py-16 bg-gray-900">
-            <h2 class="text-3xl font-bold text-center mb-8 text-gray-100">Portfolio</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
-                    <h3 class="text-xl font-semibold mb-2 text-gray-100">Farmer Management Software</h3>
-                    <p class="mb-4 text-gray-400">Developed a comprehensive software to manage farmer details, including registration, input distribution, and produce collection.</p>
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-100">Portfolio</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <div
+                        class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300 text-gray-100">
+                        <h3 class="text-xl sm:text-2xl font-semibold mb-2">Farmer Management Software</h3>
+                        <p class="mb-4">Developed a comprehensive software to manage farmer details, including
+                            registration, input distribution, and produce collection.</p>
+                    </div>
+                    <div
+                        class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300 text-gray-100">
+                        <h3 class="text-xl sm:text-2xl font-semibold mb-2">Inventory App</h3>
+                        <p class="mb-4">Created an inventory application to track and manage company assets and
+                            supplies efficiently.</p>
+                    </div>
+                    <div
+                        class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300 text-gray-100">
+                        <h3 class="text-xl sm:text-2xl font-semibold mb-2">Task Management App</h3>
+                        <p class="mb-4">Built a task management app to facilitate better project management and
+                            task allocation within the team.</p>
+                    </div>
+                    <div
+                        class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300 text-gray-100">
+                        <h3 class="text-xl sm:text-2xl font-semibold mb-2">Point of Sale System App</h3>
+                        <p class="mb-4">Developed a Point of Sale System app to streamline sales transactions and
+                            inventory management for businesses.</p>
+                    </div>
+                    <!-- Add more projects here -->
                 </div>
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
-                    <h3 class="text-xl font-semibold mb-2 text-gray-100">Inventory App</h3>
-                    <p class="mb-4 text-gray-400">Created an inventory application to track and manage company assets and supplies efficiently.</p>
-                </div>
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
-                    <h3 class="text-xl font-semibold mb-2 text-gray-100">Task Management App</h3>
-                    <p class="mb-4 text-gray-400">Built a task management app to facilitate better project management and task allocation within the team.</p>
-                </div>
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
-                    <h3 class="text-xl font-semibold mb-2 text-gray-100">Point of Sale System App</h3>
-                    <p class="mb-4 text-gray-400">Developed a Point of Sale System app to streamline sales transactions and inventory management for businesses.</p>
-                </div>
-                <!-- Add more projects here -->
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="py-16 bg-gray-800">
-            <h2 class="text-3xl font-bold text-center mb-8 text-gray-100">Contact Me</h2>
-            <p class="text-center mb-4">You can contact me at:</p>
-            <ul class="text-center mb-8">
-                <li class="mb-2">Mobile: 0791636501 <a href="tel:0791636501" class="text-blue-400 hover:text-blue-300">Call Now</a></li>
-                <li>Email: njinonjuguna@gmail.com <a href="mailto:njinonjuguna@gmail.com" class="text-blue-400 hover:text-blue-300">Email Me</a></li>
-            </ul>
-            <h3 class="text-xl font-semibold text-center mb-4 text-gray-100">Send me a message</h3>
-            <form name="contact" netlify class="space-y-4 max-w-lg mx-auto">
-                <input type="hidden" name="form-name" value="contact">
-                <div class="flex flex-col">
-                    <label for="name" class="mb-2">Name:</label>
-                    <input type="text" id="name" name="name" required class="p-2 border border-gray-600 rounded bg-gray-700 text-gray-300">
-                </div>
-                <div class="flex flex-col">
-                    <label for="email" class="mb-2">Email:</label>
-                    <input type="email" id="email" name="email" required class="p-2 border border-gray-600 rounded bg-gray-700 text-gray-300">
-                </div>
-                <div class="flex flex-col">
-                    <label for="message" class="mb-2">Message:</label>
-                    <textarea id="message" name="message" required class="p-2 border border-gray-600 rounded bg-gray-700 text-gray-300"></textarea>
-                </div>
-                <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">Submit</button>
-            </form>                        
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-100">Contact Me</h2>
+                <p class="text-center mb-6">You can contact me at:</p>
+                <ul class="text-center mb-8">
+                    <li class="mb-4">Mobile: <a href="tel:0791636501" class="text-blue-400 hover:text-blue-300">0791636501</a>
+                    </li>
+                    <li>Email: <a href="mailto:njinonjuguna@gmail.com"
+                            class="text-blue-400 hover:text-blue-300">njinonjuguna@gmail.com</a></li>
+                </ul>
+                <h3 class="text-xl sm:text-2xl font-semibold text-center mb-4 text-gray-100">Send me a message</h3>
+                <form name="contact" netlify class="space-y-4 max-w-lg mx-auto">
+                    <input type="hidden" name="form-name" value="contact">
+                    <div class="flex flex-col">
+                        <label for="name" class="mb-2">Name:</label>
+                        <input type="text" id="name" name="name" required
+                            class="p-3 border border-gray-600 rounded bg-gray-700 text-gray-300 focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="email" class="mb-2">Email:</label>
+                        <input type="email" id="email" name="email" required
+                            class="p-3 border border-gray-600 rounded bg-gray-700 text-gray-300 focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="message" class="mb-2">Message:</label>
+                        <textarea id="message" name="message" required
+                            class="p-3 border border-gray-600 rounded bg-gray-700 text-gray-300 h-32 resize-none focus:outline-none focus:border-blue-500"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300">Submit</button>
+                </form>
+            </div>
         </section>
+        <!-- Back to Top Button -->
+        <a href="#home" class="fixed bottom-4 right-14 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">
+            <i class="fas fa-arrow-up"></i> Top
+        </a>
     </main>
 
-    <footer class="bg-gray-800 shadow p-4 mt-6 text-center">
-        <p>&copy; 2024 Ernest Njino. All rights reserved.</p>
-        <div class="flex justify-center space-x-4 mt-4">
-            <a href="https://github.com/NjinoNjuguna" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition duration-300">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/ernest-njuguna-925982177" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition duration-300">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://x.com/NjinoNjuguna" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition duration-300">
-                <i class="fab fa-x fa-2x"></i>
-            </a>
-            <a href="https://www.facebook.com/anesto.jincho" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition duration-300">
-                <i class="fab fa-facebook fa-2x"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UCHaINrsUcdh2ThGRdSDHNbA" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition duration-300">
-                <i class="fab fa-youtube fa-2x"></i>
-            </a>
+    <!-- Footer -->
+    <footer class="bg-gray-800 shadow-md py-4">
+        <div class="container mx-auto text-center text-gray-300">
+            <p>&copy; 2024 Ernest Njino. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="https://github.com/NjinoNjuguna" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-300 hover:text-white transition duration-300">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ernest-njuguna-925982177" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-300 hover:text-white transition duration-300">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://x.com/NjinoNjuguna" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-300 hover:text-white transition duration-300">
+                    <i class="fab fa-x fa-2x"></i>
+                </a>
+                <a href="https://www.facebook.com/anesto.jincho" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-300 hover:text-white transition duration-300">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCHaINrsUcdh2ThGRdSDHNbA" target="_blank"
+                    rel="noopener noreferrer" class="text-gray-300 hover:text-white transition duration-300">
+                    <i class="fab fa-youtube fa-2x"></i>
+                </a>
+            </div>
         </div>
     </footer>
 
     <script src="scripts.js"></script>
 </body>
+
 </html>
